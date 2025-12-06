@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vie">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>81 ngày đêm chiến đấu bảo vệ Thành cổ Quảng Trị: Khúc tráng ca máu và hoa</title>
+
+    <style>
+       :root {
+            --primary-color: #b30000;
+            --accent: #e63946;
+            --bg: #f5f5f5;
+            --card: #ffffff;
+            --muted: #666;
+            --maxw: 1100px;
+        }
+
+        * { 
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: #111;
+        }
+
+        header {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent));
+            color: #fff;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 14px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .menu a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .hero {
+            padding: 28px 0 10px; 
+            display: flex; 
+            gap: 20px;
+            align-items: center;
+        }
+
+        .hero .text h1 {
+            color: var(--primary-color); 
+        }
+
+        .hero .text p {
+            color: var(--accent); 
+        }
+
+        .thumb img {
+            width: 200px; 
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+        }
+
+        main {
+            padding: 18px 0; 
+        }
+
+        .grid {
+            display: grid; 
+            grid-template-columns: 1fr 360px; 
+            gap: 18px; 
+        }
+
+        .card {
+            background: var(--card); 
+            padding: 14px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 6px rgba(0,0,0,0.1); 
+        }
+
+        .timeline {
+            max-height: 520px; 
+            overflow: auto; 
+            padding: 8px 12px;
+        }
+
+        .entry {
+            display: flex; 
+            gap: 12px; 
+            padding: 10px; 
+        }
+
+        .dot {
+            width: 12px; 
+            height: 12px;
+            border-radius: 50%; 
+            background: var(--primary-color); 
+            flex-shrink: 0; 
+            margin-top: 6px;
+        }
+
+        .meta {
+            min-width: 110px; 
+            color: var(--muted);
+            font-size: 13px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin-top: 8px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px; 
+        }
+
+        th {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent)); 
+            color: #fff;
+        }
+
+        .video-wrap iframe {
+            width: 100%;
+            height: 220px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 880px) {
+            .grid {
+                grid-template-columns: 1fr; 
+            }
+
+            .hero {
+                flex-direction: column; 
+            }
+
+            .video-wrap iframe {
+                height: 180px; 
+            }
+        }
+    </style> 
+</head>
+
+<body> 
+    <header> 
+        <div class="container">
+            <nav>
+                <div class="logo">81 ngày đêm Thành Cổ Quảng Trị</div> 
+
+                <div class="menu"> 
+                    <a href="#home">Trang chủ</a>
+                    <a href="#timeline">Timeline 81 ngày</a>
+                    <a href="#media">Hình ảnh & Video</a>
+                    <a href="#info">Bảng tóm tắt</a>
+                    <a href="https://www.youtube.com/results?search_query=Mưa+Đỏ" target="_blank">Phim Mưa Đỏ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="text">
+                <h1>81 Ngày Đêm – Thành Cổ Quảng Trị (1972)</h1> 
+                <p>Cuộc chiến đấu 81 ngày đêm bảo vệ Thành cổ Quảng Trị (28-6-1972 - 16-9-1972) là một trong những biểu hiện sinh động nhất cho khát vọng độc lập, tự do, thống nhất đất nước.</p> 
+            </div>
+
+            <div class="thumb">
+                <img src="https://cdn.nhandan.vn/images/6774a2cbcc5a73e70778c5dc99702adb42b60ec86a61da44f85fe7dcb78d18de393f0b72392abe0087086dbb5c56b90263a899dc0d598a8828a44264337440e8/muado-still-014.jpg" alt="Ảnh minh họa"> 
+            </div>
+        </section>
+
+        <!-- GRID -->
+        <section class="grid"> 
+            
+            <div>
+                <!-- TIMELINE -->
+                <div class="card" id="timeline">
+                    <h3>Timeline 81 ngày đêm</h3> 
+                    <p>Lược tóm các mốc quan trọng trong 81 ngày chiến đấu.</p>
+                    <div class="timeline" id="timeline-list"></div> 
+                </div>
+
+                <!-- MEDIA -->
+                <div class="card" id="media">
+                    <h3>Hình ảnh & Video</h3>
+
+                    <figure>
+                        <img src="https://cdn.nhandan.vn/images/6774a2cbcc5a73e70778c5dc99702adb42b60ec86a61da44f85fe7dcb78d18de393f0b72392abe0087086dbb5c56b90263a899dc0d598a8828a44264337440e8/muado-still-014.jpg" width="100%">
+                    </figure>
+
+                    <figure>
+                        <img src="https://cdn.nhandan.vn/images/6774a2cbcc5a73e70778c5dc99702adb42b60ec86a61da44f85fe7dcb78d18de393f0b72392abe0087086dbb5c56b90263a899dc0d598a8828a44264337440e8/muado-still-014.jpg" width="100%">
+                    </figure>
+
+                    <div class="video-wrap">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe> 
+                    </div>
+
+                </div>
+            </div>
+
+            <aside>
+                <div class="card" id="info">
+                    <h3>Bảng tóm tắt thông tin</h3>
+                    <table>
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Sự kiện</th>
+                        </tr>
+                        <tr>
+                            <td>14/6/1972</td>
+                            <td>Bắt đầu chiến dịch 81 ngày đêm</td>
+                        </tr>
+                        <tr>
+                            <td>16/9/1972</td>
+                            <td>Kết thúc chiến dịch</td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    <footer>
+        © Bài tập Tin học 12 – Website lịch sử 81 ngày đêm Thành cổ Quảng Trị 
+    </footer>
+
+    <!-- TIMELINE JS -->
+    <script>
+        (function(){
+            const container = document.getElementById('timeline-list');
+
+            for(let i = 1; i <= 81; i++){
+                const entry = document.createElement("div");
+                entry.className = "entry";
+
+                entry.innerHTML = `
+                    <div class="dot"></div>
+                    <div class="meta">Ngày ${i}</div>
+                    <div class="body">
+                        <h4>Sự kiện ngày ${i}</h4>
+                        <p>Mô tả ngắn gọn lorem ipsum cho ngày ${i}.</p>
+                    </div>
+                `;
+
+                container.appendChild(entry);
+            }
+        })();
+    </script>
+
+</body>
+</html>
